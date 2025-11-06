@@ -1,4 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* 1. LOAD THE CUSTOM FONT */
+@font-face {
+  font-family: 'CarnevaleFreakshow';
+  src: url('CarnevaleFreakshow.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rochester-Regular';
+  src: url('Rochester-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MouseMemoirs-Regular';
+  src: url('MouseMemoirs-Regular.ttf') format('truetype');
+}
+
+/* ... all your other CSS code starts below ... */
 
 /* ... all your other CSS code starts below ... */
 /*
@@ -97,44 +113,75 @@ body {
 .hero-banner {
     background-color: #333;
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
     margin: 20px;
     border-radius: 8px;
-    position: relative; /* Essential for the animation */
-    overflow: hidden;     /* Hides the icons outside the box */
+    position: relative;
+    overflow: hidden; 
 }
 
-.hero-banner h1 {
-    /* This is the stylish font */
-    font-family: 'Great Vibes', cursive;
-    font-size: 68px; /* Bigger font size */
-    margin: 0 0 10px 0;
-    font-weight: 500;
+/* This holds the two title lines */
+.brand-title {
+    margin-bottom: 15px;
+}
 
-    /* This is the "Shiny Purple" effect */
+/* Style for "AMASIH" */
+.title-amasih {
+    font-family: 'CarnevaleFreakshow', sans-serif;
+    font-size: 82px;
+    font-weight: normal;
+    margin: 0;
+
+    /* Shiny Purple Effect */
     background: linear-gradient(145deg, #e040fb, #ab47bc, #8e24aa, #ab47bc, #e040fb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-
-    /* This keeps the text above the animations */
-    position: relative;
-    z-index: 2;
 }
 
-.hero-banner p {
-    font-size: 20px;
-    margin-bottom: 25px;
+/* Style for "Wearables and Adornments" */
+.title-details {
+    font-family: 'Rochester-Regular', cursive;
+    font-size: 42px;
+    font-weight: normal;
+    margin: -10px 0 0 0; /* Pulls it closer to AMASIH */
+
+    /* Shiny Purple Effect */
+    background: linear-gradient(145deg, #e040fb, #ab47bc, #8e24aa, #ab47bc, #e040fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* Style for the slogan */
+.slogan {
+    font-family: 'MouseMemoirs-Regular', sans-serif;
+    font-size: 32px;
     color: #ffffff;
+    margin: 20px 0 25px 0;
+    letter-spacing: 1px;
+}
 
-    /* This keeps the text above the animations */
+/* Make sure the button is still styled */
+.cta-button {
+    background-color: #daa520; /* Gold */
+    color: #111; /* Black text */
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+    /* Keep it above any future animations */
     position: relative;
     z-index: 2;
 }
 
-/* Make sure the button is also above the animation */
-.cta-button {
+.cta-button:hover {
+    background-color: #ffd700; /* Lighter gold */
+}.cta-button {
     /* ... your existing cta-button styles ... */
     position: relative;
     z-index: 2;
