@@ -257,19 +257,21 @@ body {
 
 /*
  * =========================================
- * 7. WHATSAPP BUTTON (NEW "Floating" Style)
+ * 7. WHATSAPP BUTTON (NEW "Floating" Style with Icon)
  * =========================================
  */
 .whatsapp-button {
-    display: inline-block; /* Allows for padding and centering */
+    display: inline-flex; /* Use flexbox to align icon and text */
+    align-items: center;  /* Center them vertically */
+    justify-content: center; /* Center them horizontally */
     background-color: #002147; /* Oxford Blue */
-    color: #ffffff;           /* White text */
-    padding: 10px 20px;      /* Vertical and horizontal padding */
-    margin: 10px 0 15px 0;   /* Adds space around the button */
+    color: #ffffff;           /* White text for "Order" */
+    padding: 10px 20px;      
+    margin: 10px 0 15px 0;   
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-    border-radius: 25px;     /* "Round corners" for a pill shape */
+    border-radius: 25px;     /* "Round corners" */
     border: none;
     cursor: pointer;
 
@@ -278,6 +280,21 @@ body {
 
     /* Smooth transition for the hover effect */
     transition: all 0.3s ease;
+}
+
+/* NEW styles for the icon */
+.whatsapp-button .fa-whatsapp { /* <-- I fixed my typo here */
+    color: #25D366;       /* WhatsApp Green */
+    margin-left: 8px;     /* Space between text and icon */
+    font-size: 1.2em;      /* Make icon a bit bigger */
+}
+
+.whatsapp-button:hover {
+    background-color: #003366; /* A slightly lighter blue on hover */
+
+    /* Makes the button "lift up" on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px); 
 }
 
 .whatsapp-button:hover {
