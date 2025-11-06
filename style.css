@@ -1,0 +1,288 @@
+/*
+ * =========================================
+ * 1. GLOBAL STYLES (Black BG, White Text)
+ * =========================================
+ */
+body {
+    background-color: #121212; /* Very dark black background */
+    color: #eeeeee;            /* Off-white for all text */
+    font-family: Arial, sans-serif; /* A clean, default font */
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * =========================================
+ * 2. HEADER & LAYOUT
+ * (Logo-left, Search-middle, Nav-right)
+ * =========================================
+ */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #333; /* Dark border */
+    background-color: #1c1c1c; /* Header slightly lighter black */
+}
+
+/*
+ * =========================================
+ * 3. LOGO (Image)
+ * =========================================
+ */
+.logo {
+    flex-basis: 33%; /* Give it space */
+    text-decoration: none;
+}
+
+.logo img {
+    max-height: 60px;  /* Sets the max height. You can change 60px */
+    width: auto;       /* Keeps the logo from stretching */
+    vertical-align: middle; /* Helps align it in the header */
+}
+
+/*
+ * =========================================
+ * 4. SEARCH BAR & NAVIGATION
+ * =========================================
+ */
+.search-form {
+    flex-basis: 33%;
+    display: flex;
+    justify-content: center;
+}
+.search-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #555;
+    background-color: #2a2a2a;
+    color: #eee;
+    border-radius: 5px 0 0 5px;
+    width: 70%;
+}
+.search-form button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #daa520; /* Gold button */
+    color: #111; /* Black text */
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+}
+
+.main-nav {
+    flex-basis: 33%;
+    text-align: right;
+}
+.main-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.main-nav a:hover {
+    color: #f0c14b; /* Gold hover */
+}
+
+/*
+ * =========================================
+ * 5. HERO BANNER
+ * =========================================
+ */
+.hero-banner {
+    background-color: #333; /* Dark gray background */
+    text-align: center;
+    padding: 60px 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+.hero-banner h1 {
+    font-size: 48px;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+.hero-banner p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.cta-button {
+    background-color: #daa520; /* Gold */
+    color: #111; /* Black text */
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: #ffd700; /* Lighter gold */
+}
+
+/*
+ * =========================================
+ * 6. PRODUCT SECTIONS
+ * =========================================
+ */
+.product-category {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.product-category h2 {
+    font-size: 32px;
+    color: #ffd700; /* Gold title */
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    /* 4 columns on desktop */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px;
+}
+
+.product-card {
+    background-color: #2a2a2a; /* Dark gray card */
+    border: 1px solid #444;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+.product-card img {
+    width: 100%;
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover;
+    background-color: #f9f9f9; /* Placeholder bg */
+}
+.product-card h3 {
+    font-size: 20px;
+    margin: 15px 0 10px 0;
+    color: #ffffff;
+}
+.product-card .price {
+    font-size: 18px;
+    color: #f0c14b; /* Lighter gold price */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/*
+ * =========================================
+ * 7. WHATSAPP BUTTON (Kept green)
+ * =========================================
+ */
+.whatsapp-button {
+    display: block;
+    background-color: #25D366; /* WhatsApp Green */
+    color: #ffffff;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+/*
+ * =========================================
+ * 8. FOOTER & CONTACT INFO
+ * =========================================
+ */
+footer {
+    background-color: #1c1c1c; /* Match header */
+    color: #aaa; /* Muted white */
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-info {
+    margin-bottom: 20px;
+}
+.contact-info h3 {
+    font-size: 22px;
+    color: #ffd700; /* Gold title */
+    margin-bottom: 15px;
+}
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.contact-info a {
+    color: #f0c14b; /* Gold links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #ffd700;
+}
+.copyright p {
+    font-size: 14px;
+    color: #777;
+}
+
+/*
+ * =========================================
+ * 9. RESPONSIVE (for smaller screens)
+ * =========================================
+ */
+@media (max-width: 992px) {
+    /* 2 columns on tablets */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-header {
+        flex-wrap: wrap; /* Allow header items to wrap */
+        justify-content: center;
+        padding: 15px;
+    }
+    .logo {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+    .search-form {
+        flex-basis: 70%;
+        order: 3; /* Move search below nav */
+        margin-top: 15px;
+    }
+    .main-nav {
+        flex-basis: 100%;
+        order: 2;
+        text-align: center;
+    }
+    .main-nav a {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* 1 column on mobile phones */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    .search-form {
+        flex-basis: 100%;
+    }
+    .hero-banner h1 {
+        font-size: 32px;
+    }
+}
