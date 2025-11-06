@@ -210,20 +210,35 @@ body {
 
 /*
  * =========================================
- * 7. WHATSAPP BUTTON (Kept green)
+ * 7. WHATSAPP BUTTON (NEW "Floating" Style)
  * =========================================
  */
 .whatsapp-button {
-    display: block;
-    background-color: #25D366; /* WhatsApp Green */
-    color: #ffffff;
-    padding: 12px;
+    display: inline-block; /* Allows for padding and centering */
+    background-color: #002147; /* Oxford Blue */
+    color: #ffffff;           /* White text */
+    padding: 10px 20px;      /* Vertical and horizontal padding */
+    margin: 10px 0 15px 0;   /* Adds space around the button */
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    border-radius: 25px;     /* "Round corners" for a pill shape */
+    border: none;
+    cursor: pointer;
+
+    /* This creates the "floating" effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    /* Smooth transition for the hover effect */
+    transition: all 0.3s ease;
 }
+
 .whatsapp-button:hover {
-    background-color: #128C7E;
+    background-color: #003366; /* A slightly lighter blue on hover */
+
+    /* Makes the button "lift up" on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px); 
 }
 
 /*
