@@ -1,10 +1,5 @@
 /* 1. LOAD THE CUSTOM FONT */
 @font-face {
-  font-family: 'CarnevaleFreakshow';
-  src: url('CarnevaleFreakshow.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Rochester-Regular';
   src: url('Rochester-Regular.ttf') format('truetype');
 }
