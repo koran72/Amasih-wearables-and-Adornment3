@@ -136,12 +136,16 @@ body {
     font-weight: bolder;
     margin: 0;
 
-    /* Shiny Golden Effect */
-    background: linear-gradient(145deg, #ffd700, #f0c14b, #daa520, #f0c14b, #ffd700);
+    /* Fiery Orange Effect */
+    /* This is the new top-to-bottom red-orange-yellow gradient */
+    background: linear-gradient(to bottom, #e05b00, #ff8c00, #ffbb00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+
+    /* This adds the dark red outline, just like in the image */
+    text-shadow: -1px -1px 0 #800, 1px -1px 0 #800, -1px 1px 0 #800, 1px 1px 0 #800;
 }
 
 /* Style for "Wearables and Adornments" */
