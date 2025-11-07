@@ -114,19 +114,22 @@ body {
     color: #f0c14b; /* Gold hover */
 }
 
-/*
- * =========================================
- * 5. HERO BANNER (UPDATED)
- * =========================================
- */
 .hero-banner {
-    background-color: #333;
     text-align: center;
-    padding: 60px 20px;
     margin: 20px;
     border-radius: 8px;
-    position: relative;
+    position: relative; /* Stays as the container */
     overflow: hidden; 
+
+    /* Set a specific height */
+    /* You can change 500px to be taller or shorter */
+    height: 500px; 
+
+    /* This uses flexbox to center your text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* This holds the two title lines */
