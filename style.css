@@ -18,6 +18,11 @@
   font-family: 'BungeeSpice-Regular';
   src: url('BungeeSpice-Regular.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Sofia-Regular';
+  src: url('Sofia-Regular.ttf') format('truetype');
+}
 /* ... all your other CSS code starts below ... */
 
 /* ... all your other CSS code starts below ... */
@@ -131,7 +136,7 @@ body {
 
 /* Style for "AMASIH" */
 .title-amasih {
-    font-family: 'BungeeSpice-Regular', sans-serif;
+    font-family: 'Sofia-Regular', cursive;
     font-size: 120px;
     font-weight: bolder;
     margin: 0;
