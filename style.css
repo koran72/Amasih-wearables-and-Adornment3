@@ -13,6 +13,11 @@
   font-family: 'Automania';
   src: url('AUTOMANIA.TTF') format('truetype');
 }
+
+@font-face {
+  font-family: 'BungeeSpice-Regular';
+  src: url('BungeeSpice-Regular.ttf') format('truetype');
+}
 /* ... all your other CSS code starts below ... */
 
 /* ... all your other CSS code starts below ... */
@@ -126,7 +131,7 @@ body {
 
 /* Style for "AMASIH" */
 .title-amasih {
-    font-family: 'MouseMemoirs-Regular', sans-serif;
+    font-family: 'BungeeSpice-Regular', sans-serif;
     font-size: 120px;
     font-weight: bolder;
     margin: 0;
