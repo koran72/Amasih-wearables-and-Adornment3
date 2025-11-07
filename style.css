@@ -163,20 +163,13 @@ body {
 /* Style for "AMASIH" */
 .title-amasih {
     font-family: 'Sofia-Regular', cursive;
-    font-size: 120px;
-    font-weight: bolder;
+    font-size: 82px;
+    font-weight: normal;
     margin: 0;
 
-    /* Fiery Orange Effect */
-    /* This is the new top-to-bottom red-orange-yellow gradient */
-    background: linear-gradient(to bottom, #e05b00, #ff8c00, #ffbb00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-
-    /* This adds the dark red outline, just like in the image */
-    text-shadow: -1px -1px 0 #800, 1px -1px 0 #800, -1px 1px 0 #800, 1px 1px 0 #800;
+    /* New Readable Style */
+    color: #FFFFFF; /* Pure White */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Strong shadow */
 }
 
 /* Style for "Wearables and Adornments" */
@@ -184,22 +177,25 @@ body {
     font-family: 'Rochester-Regular', cursive;
     font-size: 42px;
     font-weight: normal;
-    margin: -10px 0 0 0; /* Pulls it closer to AMASIH */
+    margin: -10px 0 0 0; 
 
-    /* Shiny Purple Effect */
-    background: linear-gradient(145deg, #e040fb, #ab47bc, #8e24aa, #ab47bc, #e040fb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    /* New Readable Style */
+    color: #FFFFFF; /* Pure White */
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7); /* Soft shadow */
 }
 
 /* Style for the slogan */
 .slogan {
     font-family: 'MouseMemoirs-Regular', sans-serif;
-    /* ... other styles ... */
-    position: relative; /* Add this */
-    z-index: 3;         /* Add this */
+    font-size: 32px;
+    color: #ffffff;
+    margin: 20px 0 25px 0;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 3;
+
+    /* New Readable Style */
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7); /* Soft shadow */
 }
 
 /* Make sure the button is still styled */
