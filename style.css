@@ -116,15 +116,13 @@ body {
 
 .hero-banner {
     text-align: center;
-    margin: 20px;
+    margin: 20px auto; /* Changed this */
     border-radius: 8px;
-    position: relative; /* Stays as the container */
+    position: relative; 
     overflow: hidden; 
-
-    /* Set a specific height */
-    /* You can change 500px to be taller or shorter */
-    height: 500px; 
-
+    height: 400px; /* Changed this from 500px */
+    max-width: 1100px; /* Added this */
+    
     /* This uses flexbox to center your text */
     display: flex;
     flex-direction: column;
@@ -164,7 +162,7 @@ body {
 .title-amasih {
     font-family: 'Sofia-Regular', cursive;
     font-size: 82px;
-    font-weight: normal;
+    font-weight: bold;
     margin: 0;
 
     /* New Readable Style */
