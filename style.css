@@ -32,7 +32,15 @@
  * =========================================
  */
 body {
-    background-color: #121212; /* Very dark black background */
+    /* === THIS IS THE NEW BACKGROUND === */
+    background-image: url('background.jpg');
+    background-size: cover;       /* Makes the image fill the screen */
+    background-attachment: fixed;   /* Makes it stay in place when you scroll */
+    background-position: center;    /* Centers the image */
+
+    /* This is a fallback color if the image fails to load */
+    background-color: #121212; 
+
     color: #eeeeee;            /* Off-white for all text */
     font-family: Arial, sans-serif; /* A clean, default font */
     margin: 0;
